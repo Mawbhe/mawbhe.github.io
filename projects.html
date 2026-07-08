@@ -1,0 +1,320 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-NS8PF4V271"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-NS8PF4V271");
+    </script>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Projects by Algassimou Diallo, including a completed LC-MS urinary pathogen recognition project using deep learning and batch correction."
+    />
+    <meta name="author" content="Algassimou Diallo" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://mawbhe.github.io/projects.html" />
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <meta property="og:title" content="Projects | Algassimou Diallo" />
+    <meta
+      property="og:description"
+      content="Projects by Algassimou Diallo, including LC-MS bacteria recognition from urinary pathogen data."
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://mawbhe.github.io/projects.html"
+    />
+    <meta
+      property="og:image"
+      content="https://mawbhe.github.io/ressources/portrait-optimized.jpg"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Projects | Algassimou Diallo" />
+    <meta
+      name="twitter:description"
+      content="LC-MS urinary pathogen recognition and other projects by Algassimou Diallo."
+    />
+    <meta
+      name="twitter:image"
+      content="https://mawbhe.github.io/ressources/portrait-optimized.jpg"
+    />
+    <script src="assets/theme.js?v=20260521"></script>
+    <title>Projects | Algassimou Diallo</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="stylesheet" href="assets/site.css?v=20260521" />
+  </head>
+  <body class="bg-white text-slate-900 font-sans">
+    <!-- Navigation with mathematical notation -->
+    <nav
+      class="sticky top-0 z-50 bg-white/90 backdrop-blur-sm border-b border-slate-200"
+    >
+      <div class="max-w-4xl mx-auto px-6 py-4">
+        <div class="flex flex-wrap items-center justify-between gap-4">
+          <!-- Logo as operator -->
+          <a href="index.html" class="logo-operator text-2xl tracking-tight">
+            \( \mathbb{AGD} \)
+          </a>
+
+          <!-- Nav items with mathematical symbols -->
+          <div class="flex items-center gap-4">
+            <div class="flex flex-wrap justify-end gap-x-6 gap-y-2 text-sm">
+              <a
+                href="index.html"
+                class="network-node hover:text-blue-600 transition-colors"
+                title="Home space"
+              >
+                <span class="text-slate-600">Home</span>
+              </a>
+              <a
+                href="#projects"
+                class="network-node hover:text-blue-600 transition-colors"
+                aria-current="page"
+                title="Projects region"
+              >
+                <span class="text-slate-600">Projects</span>
+              </a>
+              <a
+                href="cv.html"
+                class="network-node hover:text-blue-600 transition-colors"
+                title="Curriculum vitae"
+              >
+                <span class="text-slate-600">CV</span>
+              </a>
+            </div>
+            <button
+              id="theme-toggle"
+              type="button"
+              class="px-3 py-1 text-xs rounded border border-slate-300 text-slate-600 hover:text-blue-600 hover:border-blue-400 transition-colors"
+              aria-label="Toggle dark mode"
+              aria-pressed="false"
+            >
+              <svg
+                class="w-4 h-4"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path d="M21 12.79A9 9 0 1 1 11.21 3c0 0-2 7 2 11s11-1 11-1Z" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Projects Section -->
+    <section id="projects" class="euclidean-grid py-32 bg-slate-50">
+      <div class="max-w-4xl mx-auto px-6">
+        <div class="flex flex-wrap items-baseline gap-4 mb-16">
+          <h2 class="text-4xl font-bold">Projects</h2>
+        </div>
+
+        <div class="space-y-16">
+          <section class="space-y-6">
+            <h3 class="text-xl font-semibold text-slate-700">Research</h3>
+            <article
+              class="network-node grid-snap bg-white p-8 rounded-lg border-2 border-slate-200"
+            >
+              <div
+                class="flex flex-wrap items-start justify-between gap-4 mb-6"
+              >
+                <div>
+                  <span
+                    class="inline-block px-3 py-1 bg-green-100 text-green-700 text-xs rounded-full mb-3"
+                  >
+                    Completed
+                  </span>
+                  <h4 class="text-xl font-semibold text-slate-900">
+                    Liquid Chromatography-Mass Spectrometry for bacteria
+                    recognition
+                  </h4>
+                </div>
+                <span class="text-1xl font-mono logo-operator"
+                  >\( \mathcal{LCMS} \)</span
+                >
+              </div>
+
+              <div class="text-sm text-slate-700 leading-relaxed">
+                <span class="font-semibold text-slate-900">Abstract:</span>
+                Rapid identification of urinary pathogens from LC-MS data could
+                shorten diagnosis time compared with standard culture methods.
+                However, automatic classification is difficult due to
+                high-dimensional signals, strong batch effects, and class
+                imbalance. We study these challenges on LC-MS urine data
+                collected across 13 batches and 28 bacterial classes, combining
+                artificial samples with a limited set of real patient samples.
+                We compare several deep learning approaches, including PCA,
+                autoencoders, and encoder-based classifiers. We find that
+                reconstruction-based latent spaces are not sufficient for
+                accurate classification. In contrast, a simple batch
+                correction--subtracting the mean blank signal per
+                batch--combined with compact bottleneck classifiers trained for
+                discrimination yields the most stable performance. The best
+                model reaches 83.6% accuracy and 83.7 macro-F1 on the artificial
+                samples. When applied to the real patient subset, the model
+                achieves about 60% accuracy, showing that performance remains
+                limited on clinical samples.
+              </div>
+
+              <div class="mt-6 pt-6 border-t border-slate-200">
+                <a
+                  href="ressources/LC_MS_final_paper.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="inline-flex items-center gap-2 px-4 py-2 bg-pink-100 text-pink-700 rounded hover:bg-pink-200 transition-colors text-sm"
+                >
+                  <svg
+                    class="w-4 h-4"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                    />
+                  </svg>
+                  Final Paper
+                </a>
+              </div>
+            </article>
+          </section>
+
+          <section class="space-y-6">
+            <h3 class="text-xl font-semibold text-slate-700">Side Projects</h3>
+
+            <article
+              class="network-node bg-white p-8 rounded-lg border-2 border-slate-200"
+            >
+              <div
+                class="flex flex-wrap items-start justify-between gap-4 mb-4"
+              >
+                <div>
+                  <span
+                    class="inline-block px-3 py-1 bg-blue-100 text-blue-700 text-xs rounded-full mb-3"
+                  >
+                    In progress
+                  </span>
+                  <h4 class="text-xl font-semibold text-slate-900">OpenStud</h4>
+                </div>
+                <span class="text-1xl font-mono logo-operator"
+                  >\( \mathcal{OPENSTUD} \)</span
+                >
+              </div>
+              <p class="text-sm text-slate-600 leading-relaxed max-w-3xl">
+                A student-first fork of the opencode AI agent, reimagined for
+                study workflows, helping students digest PDFs, generate
+                summaries, build quizzes, extract key concepts, and turn course
+                material into an interactive study companion.
+              </p>
+              <div class="mt-6 pt-6 border-t border-slate-200">
+                <a
+                  href="https://github.com/mawbhe/Open-Stud"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="inline-flex items-center gap-2 px-4 py-2 bg-slate-100 text-slate-700 rounded hover:bg-slate-200 transition-colors text-sm"
+                >
+                  <svg
+                    class="w-4 h-4"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.4 5.4 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.3-.85 2.1-.17.8-.15 1.66-.15 1.66V22"
+                    />
+                    <path d="M9 18c-4.51 2-5-2-7-2" />
+                  </svg>
+                  GitHub
+                </a>
+              </div>
+            </article>
+
+            <article
+              class="network-node bg-white p-8 rounded-lg border-2 border-slate-200"
+            >
+              <div
+                class="flex flex-wrap items-start justify-between gap-4 mb-4"
+              >
+                <div>
+                  <span
+                    class="inline-block px-3 py-1 bg-blue-100 text-blue-700 text-xs rounded-full mb-3"
+                  >
+                    In progress
+                  </span>
+                  <h4 class="text-xl font-semibold text-slate-900">FINA</h4>
+                </div>
+                <span class="text-1xl font-mono logo-operator"
+                  >\( \mathcal{FINA} \)</span
+                >
+              </div>
+              <p class="text-sm text-slate-600 leading-relaxed max-w-3xl">
+                A personal finance AI agent that turns bank exports into a
+                conversational money workspace, connecting to bank accounts or
+                imported CSV files to analyze spending, build budgets, forecast
+                cash flow, and answer everyday financial questions through an
+                LLM (via an API or a local model).
+              </p>
+              <div class="mt-6 pt-6 border-t border-slate-200">
+                <a
+                  href="https://github.com/mawbhe/FINA"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="inline-flex items-center gap-2 px-4 py-2 bg-slate-100 text-slate-700 rounded hover:bg-slate-200 transition-colors text-sm"
+                >
+                  <svg
+                    class="w-4 h-4"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.4 5.4 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.3-.85 2.1-.17.8-.15 1.66-.15 1.66V22"
+                    />
+                    <path d="M9 18c-4.51 2-5-2-7-2" />
+                  </svg>
+                  GitHub
+                </a>
+              </div>
+            </article>
+          </section>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="euclidean-grid py-8 border-t border-slate-200">
+      <div
+        class="max-w-4xl mx-auto px-6 text-center text-xs text-slate-500 font-mono"
+      >
+        © 2026 Algassimou Diallo
+      </div>
+    </footer>
+  </body>
+</html>

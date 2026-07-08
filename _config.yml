@@ -1,0 +1,38 @@
+title: "Algassimou Diallo"
+description: "M2 student at Université Côte d'Azur"
+url: "https://mawbhe.github.io"
+baseurl: ""
+lang: "en"
+
+author:
+  name: "Algassimou Diallo"
+  links:
+    - label: "GitHub"
+      url: "https://github.com/mawbhe"
+    - label: "LinkedIn"
+      url: "https://www.linkedin.com/in/Algassimou-diallo"
+
+# SEO plugin + sitemap + feed
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-feed
+
+# Collections/posts/pages defaults for titles and meta
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+      canonical_url: "{{ page.url | absolute_url }}"
+
+feed:
+  path: atom.xml
+
+# Exclusions
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-NS8PF4V271"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-NS8PF4V271");
+    </script>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Curriculum vitae of Algassimou Diallo, Master 2 Data Science and AI student at Universite Cote d'Azur."
+    />
+    <meta name="author" content="Algassimou Diallo" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://mawbhe.github.io/cv.html" />
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <meta property="og:title" content="CV | Algassimou Diallo" />
+    <meta
+      property="og:description"
+      content="Curriculum vitae of Algassimou Diallo, Master 2 Data Science and AI student at Universite Cote d'Azur."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://mawbhe.github.io/cv.html" />
+    <meta
+      property="og:image"
+      content="https://mawbhe.github.io/ressources/portrait-optimized.jpg"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="CV | Algassimou Diallo" />
+    <meta
+      name="twitter:description"
+      content="Curriculum vitae of Algassimou Diallo."
+    />
+    <meta
+      name="twitter:image"
+      content="https://mawbhe.github.io/ressources/portrait-optimized.jpg"
+    />
+    <script src="assets/theme.js?v=20260521"></script>
+    <title>CV | Algassimou Diallo</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="stylesheet" href="assets/site.css?v=20260521" />
+  </head>
+  <body class="bg-white text-slate-900 font-sans">
+    <!-- Navigation with mathematical notation -->
+    <nav
+      class="sticky top-0 z-50 bg-white/90 backdrop-blur-sm border-b border-slate-200"
+    >
+      <div class="max-w-4xl mx-auto px-6 py-4">
+        <div class="flex flex-wrap items-center justify-between gap-4">
+          <!-- Logo as operator -->
+          <a href="index.html" class="logo-operator text-2xl tracking-tight">
+            \( \mathbb{AGD} \)
+          </a>
+
+          <!-- Nav items with mathematical symbols -->
+          <div class="flex items-center gap-4">
+            <div class="flex flex-wrap justify-end gap-x-6 gap-y-2 text-sm">
+              <a
+                href="index.html"
+                class="network-node hover:text-blue-600 transition-colors"
+                title="Home space"
+              >
+                <span class="text-slate-600">Home</span>
+              </a>
+              <a
+                href="projects.html"
+                class="network-node hover:text-blue-600 transition-colors"
+                title="Projects region"
+              >
+                <span class="text-slate-600">Projects</span>
+              </a>
+              <a
+                href="cv.html"
+                class="network-node hover:text-blue-600 transition-colors"
+                aria-current="page"
+                title="Curriculum vitae"
+              >
+                <span class="text-slate-600">CV</span>
+              </a>
+            </div>
+            <button
+              id="theme-toggle"
+              type="button"
+              class="px-3 py-1 text-xs rounded border border-slate-300 text-slate-600 hover:text-blue-600 hover:border-blue-400 transition-colors"
+              aria-label="Toggle dark mode"
+              aria-pressed="false"
+            >
+              <svg
+                class="w-4 h-4"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path d="M21 12.79A9 9 0 1 1 11.21 3c0 0-2 7 2 11s11-1 11-1Z" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- CV Section -->
+    <section class="euclidean-grid py-12">
+      <div class="max-w-4xl mx-auto px-6">
+        <div class="flex flex-wrap items-center justify-between gap-4 mb-6">
+          <h1 class="text-3xl font-bold tracking-tight">Curriculum Vitae</h1>
+          <div class="flex gap-3 text-sm">
+            <a
+              href="ressources/Algassimou_Diallo_CV.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-flex items-center gap-2 px-4 py-2 bg-blue-100 text-blue-700 rounded hover:bg-blue-200 transition-colors"
+            >
+              Open in new tab
+            </a>
+            <a
+              href="ressources/Algassimou_Diallo_CV.pdf"
+              download
+              class="inline-flex items-center gap-2 px-4 py-2 bg-slate-100 text-slate-700 rounded hover:bg-slate-200 transition-colors"
+            >
+              Download PDF
+            </a>
+          </div>
+        </div>
+
+        <!-- Embedded PDF viewer with graceful fallback -->
+        <object
+          data="ressources/Algassimou_Diallo_CV.pdf"
+          type="application/pdf"
+          class="w-full rounded-lg border border-slate-200 shadow-sm"
+          style="height: 85vh"
+        >
+          <div class="p-8 text-center text-slate-600">
+            <p class="mb-4">
+              Your browser can't display the PDF inline.
+            </p>
+            <a
+              href="ressources/Algassimou_Diallo_CV.pdf"
+              class="text-blue-600 hover:underline"
+              >Open the CV in a new tab.</a
+            >
+          </div>
+        </object>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="euclidean-grid py-8 border-t border-slate-200">
+      <div
+        class="max-w-4xl mx-auto px-6 text-center text-xs text-slate-500 font-mono"
+      >
+        © 2026 Algassimou Diallo
+      </div>
+    </footer>
+  </body>
+</html>
